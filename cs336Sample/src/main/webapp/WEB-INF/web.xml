@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>cs336Sample</display-name>
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>  
+  </welcome-file-list>
+  
+    <servlet>
+    	<servlet-name>CustLoginServlet</servlet-name>
+    	<servlet-class>com.cs336.pkg.CustLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+    	<servlet-name>CustLoginServlet</servlet-name>
+    	<url-pattern>/custLogin</url-pattern>
+	</servlet-mapping>
+	
+    <servlet>
+    	<servlet-name>CustRepLoginServlet</servlet-name>
+    	<servlet-class>com.cs336.pkg.CustRepLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+    	<servlet-name>CustRepLoginServlet</servlet-name>
+    	<url-pattern>/custRepLogin</url-pattern>
+	</servlet-mapping>
+	
+    <servlet>
+    	<servlet-name>AdminLoginServlet</servlet-name>
+    	<servlet-class>com.cs336.pkg.AdminLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+    	<servlet-name>AdminLoginServlet</servlet-name>
+    	<url-pattern>/adminLogin</url-pattern>
+	</servlet-mapping>
+	
+    <servlet>
+    	<servlet-name>MakeReservationServlet</servlet-name>
+    	<servlet-class>com.cs336.pkg.MakeReservationServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+    	<servlet-name>MakeReservationServlet</servlet-name>
+    	<url-pattern>/makeReservation</url-pattern>
+	</servlet-mapping>
+
+    <servlet>
+        <servlet-name>CancelReservationServlet</servlet-name>
+        <servlet-class>com.cs336.pkg.CancelReservationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CancelReservationServlet</servlet-name>
+        <url-pattern>/cancelReservation</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>JoinWaitingListServlet</servlet-name>
+    	<servlet-class>com.cs336.pkg.JoinWaitingListServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>JoinWaitingListServlet</servlet-name>
+    	<url-pattern>/JoinWaitingListServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>PostQuestionServlet</servlet-name>
+    	<servlet-class>com.cs336.pkg.PostQuestionServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>PostQuestionServlet</servlet-name>
+    	<url-pattern>/postQuestion</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>SearchQAServlet</servlet-name>
+    	<servlet-class>com.cs336.pkg.SearchQAServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>SearchQAServlet</servlet-name>
+    	<url-pattern>/searchQA</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>ViewPastServlet</servlet-name>
+    	<servlet-class>com.cs336.pkg.ViewPastServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>ViewPastServlet</servlet-name>
+   		<url-pattern>/viewPast</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>ViewUpcomingServlet</servlet-name>
+    	<servlet-class>com.cs336.pkg.ViewUpcomingServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>ViewUpcomingServlet</servlet-name>
+    	<url-pattern>/viewUpcoming</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>SubmitReplyServlet</servlet-name>
+    <servlet-class>com.cs336.pkg.SubmitReplyServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SubmitReplyServlet</servlet-name>
+    <url-pattern>/submitReply</url-pattern>
+</servlet-mapping>
+    
+    
+    <servlet>
+    <servlet-name>maintainAirport</servlet-name>
+    <servlet-class>com.cs336.pkg.MaintainAirportServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>maintainAirport</servlet-name>
+    <url-pattern>/maintainAirport</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>maintainAircraft</servlet-name>
+    <servlet-class>com.cs336.pkg.MaintainAircraftServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>maintainAircraft</servlet-name>
+    <url-pattern>/maintainAircraft</url-pattern>
+</servlet-mapping>
+    
+    
+     <servlet>
+    <servlet-name>MaintainFlightServlet</servlet-name>
+    <servlet-class>com.cs336.pkg.MaintainFlightServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>MaintainFlightServlet</servlet-name>
+    <url-pattern>/maintainFlight</url-pattern>
+</servlet-mapping>
+
+</web-app>
